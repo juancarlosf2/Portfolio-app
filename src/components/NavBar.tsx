@@ -19,6 +19,7 @@ import { FaAlignLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import NavLinks from "./NavLinks";
 import { animateScroll as scroll } from "react-scroll";
+import Image from "next/image";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -101,10 +102,12 @@ const NavBar = () => {
             cursor: "pointer",
           }}
         >
-          <Heading textStyle="h4">Juan C. Tremols S.</Heading>
-          <Heading textStyle="h4" fontWeight="medium" color="gray.700">
-            Junior web developer
-          </Heading>
+          <Image
+            width={180}
+            height={60}
+            src="/juanlogo.svg"
+            layout="intrinsic"
+          />
         </Box>
         {content}
       </Flex>
