@@ -27,7 +27,7 @@ function AboutSection() {
           fontWeight="semibold"
           lineHeight="114.5%"
         >
-          Hey, there. <br />{" "}
+          Hey there, <br />{" "}
           <Text as="span" color="brand.primary">
             Fellow visitor.
           </Text>

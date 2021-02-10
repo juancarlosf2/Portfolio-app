@@ -8,8 +8,14 @@ const ContentWrapper: React.FC<Props> = ({ children, ...props }) => {
       <Grid
         spacing={12}
         gap={[8, 10]}
-        templateColumns={["auto", "auto", "auto", "auto auto"]}
-        justifyContent={["center", "center", "center", "space-between"]}
+        templateColumns={["auto", "auto", "auto", "auto", "auto auto"]}
+        justifyContent={[
+          "center",
+          "center",
+          "center",
+          "center",
+          "space-between",
+        ]}
         mx="auto"
         alignItems="center"
         {...props}

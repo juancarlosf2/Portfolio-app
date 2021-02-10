@@ -1,7 +1,8 @@
-import { Box, HStack, Icon, Image, VStack } from "@chakra-ui/core";
+import { Box, HStack, Icon, Image, Link, VStack } from "@chakra-ui/core";
 import Title from "./shared/Title";
 import NextLink from "next/link";
 import { IoLogoLinkedin } from "react-icons/io";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
@@ -22,23 +23,35 @@ function Footer() {
         </Title>
         <HStack spacing={2}>
           <NextLink passHref href={process.env.NEXT_PUBLIC_LINKEDIN_URL}>
-            <a target="_blank">
+            <Link
+              as={motion.a}
+              whileTap={{ scale: 0.9 }}
+              _hover={{
+                cursor: "pointer",
+              }}
+              target="_blank"
+            >
               <Icon
                 as={IoLogoLinkedin}
-                _hover={{ cursor: "pointer" }}
                 boxSize="40px"
                 color="brand.background"
               />
-            </a>
+            </Link>
           </NextLink>
-          <NextLink passHref href="https://outlook.live.com/mail/0/inbox">
-            <a target="_blank">
-              <Image
-                src="/mail-bulk.svg"
-                _hover={{ cursor: "pointer" }}
-                boxSize="40px"
-              />
-            </a>
+          <NextLink
+            passHref
+            href="mailto:juan_carlosf2@hotmail.com?subject=work"
+          >
+            <Link
+              as={motion.a}
+              whileTap={{ scale: 0.9 }}
+              _hover={{
+                cursor: "pointer",
+              }}
+              target="_blank"
+            >
+              <Image src="/mail-bulk.svg" boxSize="40px" />
+            </Link>
           </NextLink>
         </HStack>
       </VStack>

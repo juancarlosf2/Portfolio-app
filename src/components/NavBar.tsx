@@ -8,7 +8,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  Heading,
   IconButton,
   Spacer,
   Stack,

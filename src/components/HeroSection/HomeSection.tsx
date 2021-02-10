@@ -6,10 +6,11 @@ import Paragraph from "../shared/Paragraph";
 import Title from "../shared/Title";
 import Wrapper from "../shared/Wrapper";
 import NextLink from "next/link";
+import { IoLogoGithub } from "react-icons/io";
 
 const HomeSection = () => {
   return (
-    <Wrapper my={10}>
+    <Wrapper py={10}>
       <ContentWrapper bg="brand.background">
         <Stack spacing={5} maxW="880px">
           <Title>
@@ -22,7 +23,12 @@ const HomeSection = () => {
           {/*this is a line*/}
           <Box bg="brand.primary" maxW="592px" h="8px" borderRadius={4} />
           <Paragraph text="I’m Juan Carlos, a web developer based in Dominican Republic, looking for a full-time remote job. Willing to learn, thrive and face problems to achieve solutions with a stoic approach and logic-based focus. If you’re interested, I can:" />
-          <Stack direction={["column", "row"]} spacing={4} align="center">
+          <Stack
+            alignSelf={["inherited", "center", "center", "center", "start"]}
+            direction={["column", "row"]}
+            spacing={[4, 2, 4]}
+            align="center"
+          >
             <NextLink
               passHref
               href={process.env.NEXT_PUBLIC_LINKEDIN_URL as string}
@@ -52,7 +58,9 @@ const HomeSection = () => {
                 target="_blank"
                 width={["100%", "210px", "257px", "257px"]}
               >
-                <CustomButton variant="outline">See my projects</CustomButton>
+                <CustomButton rightIcon={<IoLogoGithub />} variant="outline">
+                  See my projects
+                </CustomButton>
               </Link>
             </NextLink>
           </Stack>
