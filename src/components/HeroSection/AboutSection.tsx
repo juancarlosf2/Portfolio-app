@@ -8,15 +8,15 @@ import NextLink from "next/link";
 function AboutSection() {
   return (
     <Flex
-      py={["100px", "250px"]}
+      py={["50px", "100px", "150px"]}
       px="20px"
       bg="gray.700"
       justifyContent="center"
       flexDirection="column"
       alignItems="center"
     >
-      <Box maxW="900px">
-        <Image fit="fill" src="/ProfilePic-2.png" />
+      <Box maxW={["600px", "700px", "900px"]}>
+        <Image fit="fill" src="/ProfilePic.jpg" />
       </Box>
       <TextWrapper mt={10}>
         <Title
