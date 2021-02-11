@@ -16,7 +16,7 @@ function AboutSection() {
       alignItems="center"
     >
       <Box maxW={["600px", "700px", "900px"]}>
-        <Image fit="fill" src="/ProfilePic.jpg" />
+        <Image fit="fill" src="/Profilepic-.jpg" />
       </Box>
       <TextWrapper mt={10}>
         <Title
