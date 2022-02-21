@@ -9,10 +9,10 @@ function Pdf() {
       </Head>
       <object
         style={{ width: "100vw", height: "100vh" }}
-        data="/JuanCarlosResume(1).pdf"
+        data="/ResumeJuanTremols.pdf"
         type="application/pdf"
       >
-        <embed src="/JuanCarlosResume.pdf" type="application/pdf" />
+        <embed src="/ResumeJuanTremols.pdf" type="application/pdf" />
       </object>
     </>
   );
